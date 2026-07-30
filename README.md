@@ -37,6 +37,10 @@ On the **[Releases](https://github.com/colabcolibri/casper-releases/releases)** 
 - **Paid license:** after purchase on the website, you receive a **license code by email**. Enter it in the app activation screen.
 - **Browser demo** at `demo.casper.sergioluciano.com` is read-only and does not require a desktop license.
 
+## Open-source engine
+
+Casper is built on **[open-slide](https://github.com/1weiho/open-slide)** — an open-source slide runtime licensed under the **[MIT License](https://github.com/1weiho/open-slide/blob/main/LICENSE)** (Copyright © Yiwei Ho). The Casper desktop app and these release binaries are distributed separately from open-slide; Casper adds licensing, desktop packaging, and product-specific features on top of the engine.
+
 ## Support
 
 For purchase or download questions, use the channels listed on the official website. This repository **does not** handle product issues — it only hosts release binaries.
