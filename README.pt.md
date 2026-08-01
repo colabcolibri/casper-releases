@@ -1,12 +1,12 @@
 # Casper — releases públicas do desktop
 
-Este repositório hospeda **somente artefatos de distribuição** do app desktop **Casper** (Windows e macOS). O código-fonte fica em um repositório privado; aqui publicamos instaladores, o manifesto de auto-update (`latest.json`) e pacotes assinados do updater quando aplicável.
+Instaladores oficiais do app desktop **Casper** para **Windows** e **macOS**.
 
 **README em inglês:** [README.md](README.md)
 
 ## Download (recomendado)
 
-Use os links **oficiais** do site — sempre apontam para a release mais recente, sem precisar navegar no GitHub:
+Use os links **oficiais** do site — sempre apontam para a versão mais recente:
 
 | Plataforma | Link |
 | ---------- | ------------------------------------------------ |
@@ -16,31 +16,25 @@ Use os links **oficiais** do site — sempre apontam para a release mais recente
 Site: https://casper.sergioluciano.com  
 Demo no navegador: https://demo.casper.sergioluciano.com
 
-## Releases neste repositório
+## Releases no GitHub
 
-Na aba **[Releases](https://github.com/colabcolibri/casper-releases/releases)**, cada tag `desktop-v*` (semver com prefixo) inclui:
+Na aba **[Releases](https://github.com/colabcolibri/casper-releases/releases)**, baixe o arquivo da sua plataforma:
 
-- **Windows:** `Casper_*-setup.exe` (instalador NSIS)
-- **Windows (updater):** `latest.json`, `*.nsis.zip` e `*.sig` correspondente quando o updater está habilitado
-- **macOS:** `.dmg` na mesma release quando um build Mac é enviado
+- **Windows:** `Casper_*-setup.exe`
+- **macOS:** `Casper_*_aarch64.dmg` (Apple Silicon) ou `Casper_*_x64.dmg` (Intel)
 
-### Como os builds chegam aqui
-
-| Plataforma | Pipeline |
-| ---------- | -------- |
-| Windows | GitHub Actions no repo privado de código — push da tag `desktop-v*` |
-| macOS | Build assinado local no Mac → `pnpm publish:desktop:mac --upload` |
+Quando possível, prefira os links do site acima — eles sempre resolvem para a versão atual.
 
 ## Trial e licença
 
-- **Trial de 7 dias:** inicie pelo app — na primeira abertura, informe seu e-mail (o desktop envia a solicitação ao license-server).
-- **Licença paga:** após a compra no site, você recebe um **código de licença por e-mail**. Digite na tela de ativação do app.
-- O **demo no navegador** em `demo.casper.sergioluciano.com` é somente leitura e não exige licença desktop.
+- **Trial por e-mail:** na primeira abertura, informe seu e-mail no app para iniciar o trial.
+- **Licença paga:** após a compra no site, você recebe um **código de licença por e-mail**. Digite na tela de ativação.
+- O **demo no navegador** em demo.casper.sergioluciano.com é somente leitura e não exige licença desktop.
 
 ## Motor open-source
 
-Casper é construído sobre **[open-slide](https://github.com/1weiho/open-slide)** — runtime de slides open-source sob **[licença MIT](https://github.com/1weiho/open-slide/blob/main/LICENSE)** (Copyright © Yiwei Ho). O app desktop Casper e os binários desta release são distribuídos separadamente do open-slide; Casper adiciona licenciamento, empacotamento desktop e funcionalidades de produto em cima do motor.
+Casper é construído sobre **[open-slide](https://github.com/1weiho/open-slide)** — runtime de slides open-source sob **[licença MIT](https://github.com/1weiho/open-slide/blob/main/LICENSE)** (Copyright © Yiwei Ho). O app desktop Casper e estes instaladores são distribuídos separadamente do open-slide.
 
 ## Suporte
 
-Dúvidas de compra ou download: canais listados no site oficial. Este repositório **não** trata problemas do produto — só hospeda os binários de release.
+Dúvidas de compra ou download: canais listados no site oficial. Este repositório só hospeda os instaladores — não é canal de suporte do produto.
